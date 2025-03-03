@@ -1,0 +1,37 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "departments-wpzm",
+    "name": "departments",
+    "projectId": "{{ref(project.current.projectId)}}",
+    "taskId": "storage_fpg-wa6a"
+  },
+  "mappingFields": [
+    {
+      "columnId": "dept_no",
+      "expression": {
+        "expressionStatement": "${dept_no}",
+        "alias": [
+          {
+            "name": "dept_no",
+            "value": "dept_no"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "dept_name",
+      "expression": {
+        "expressionStatement": "${dept_name}",
+        "alias": [
+          {
+            "name": "dept_name",
+            "value": "dept_name"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "departments_default_mapping-qzcr",
+  "name": "departments_default_mapping",
+  "description": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "employees",
+  "name": "employees",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$employees_employees",
+      "name": "employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-ucxw",
+      "schema": "{{task.onboarding_landing-ucxw:null$_$employees.schema}}",
+      "database": "{{task.onboarding_landing-ucxw:null$_$employees.database}}"
+    }
+  ]
+}

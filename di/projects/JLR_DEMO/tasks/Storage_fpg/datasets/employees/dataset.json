@@ -1,0 +1,21 @@
+{
+  "id": "employees-wpzp",
+  "name": "employees",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "employees",
+      "name": "employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-ucxw"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}

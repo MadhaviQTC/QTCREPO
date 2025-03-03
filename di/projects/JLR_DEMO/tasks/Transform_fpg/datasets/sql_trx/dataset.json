@@ -1,0 +1,37 @@
+{
+  "id": "sql_trx-wa6i",
+  "name": "sql_trx",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "employees-wpzp",
+      "name": "employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage_fpg-wa6a"
+    },
+    {
+      "datasetId": "salaries-wpzq",
+      "name": "salaries",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "storage_fpg-wa6a"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "sql_trx",
+    "columns": [],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {},
+    "incremental": true
+  }
+}

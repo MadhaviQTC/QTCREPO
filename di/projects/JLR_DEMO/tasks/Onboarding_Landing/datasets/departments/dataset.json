@@ -1,0 +1,15 @@
+{
+  "id": "departments",
+  "name": "departments",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$employees_departments",
+      "name": "departments",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-ucxw",
+      "schema": "{{task.onboarding_landing-ucxw:null$_$employees.schema}}",
+      "database": "{{task.onboarding_landing-ucxw:null$_$employees.database}}"
+    }
+  ]
+}

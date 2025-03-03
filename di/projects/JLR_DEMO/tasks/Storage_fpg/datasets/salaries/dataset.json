@@ -1,0 +1,21 @@
+{
+  "id": "salaries-wpzq",
+  "name": "salaries",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "salaries",
+      "name": "salaries",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "onboarding_landing-ucxw"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  }
+}
