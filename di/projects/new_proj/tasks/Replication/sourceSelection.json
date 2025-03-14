@@ -1,0 +1,14 @@
+{
+  "sourceConnection": "{{task.replication-tcg3.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "database": "{{task.replication-tcg3:null$_$HR.database}}",
+      "name": "COUNTRIES",
+      "schema": "{{task.replication-tcg3:null$_$HR.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$HR_countries"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "variables": {
+    "projectName": "",
+    "platformConnection": "",
+    "cloudStagingConnection": "",
+    "platformType": "",
+    "task.replication-tcg3.targetConnection": "",
+    "task.replication-tcg3.targetSchema": "",
+    "task.replication-tcg3.targetStorageConnection": "",
+    "task.replication-tcg3.targetControlTableSchema": "",
+    "task.replication-tcg3.sourceConnection": "",
+    "task.replication-tcg3:null$_$HR.database": "",
+    "task.replication-tcg3:null$_$HR.schema": ""
+  },
+  "idToNameMap": {
+    "replication-tcg3": "Replication"
+  }
+}
