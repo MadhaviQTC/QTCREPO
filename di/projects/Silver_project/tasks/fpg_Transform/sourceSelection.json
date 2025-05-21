@@ -1,0 +1,48 @@
+{
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "sourceTask": "fpg_landing_storage-eztw",
+      "name": "departments",
+      "type": "NONE",
+      "sourceTableId": "departments-ezty"
+    },
+    {
+      "sourceProject": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "sourceTask": "fpg_landing_storage-eztw",
+      "name": "dept_emp",
+      "type": "NONE",
+      "sourceTableId": "dept_emp-eztz"
+    },
+    {
+      "sourceProject": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "sourceTask": "fpg_landing_storage-eztw",
+      "name": "dept_manager",
+      "type": "NONE",
+      "sourceTableId": "dept_manager-ezta"
+    },
+    {
+      "sourceProject": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "sourceTask": "fpg_landing_storage-eztw",
+      "name": "employees",
+      "type": "NONE",
+      "sourceTableId": "employees-eztb"
+    },
+    {
+      "sourceProject": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "sourceTask": "fpg_landing_storage-eztw",
+      "name": "salaries",
+      "type": "NONE",
+      "sourceTableId": "salaries-eztc"
+    },
+    {
+      "sourceProject": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "sourceTask": "fpg_landing_storage-eztw",
+      "name": "titles",
+      "type": "NONE",
+      "sourceTableId": "titles-eztd"
+    }
+  ]
+}

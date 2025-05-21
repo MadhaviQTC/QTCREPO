@@ -1,0 +1,39 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "project.fpg_space$_$Bronze_project.projectId": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.fpg_transform-gc7m.databaseName": "{{task-type.transform.databaseName}}",
+    "task.fpg_transform-gc7m.internalSchema": "",
+    "task.fpg_transform-gc7m.taskSchema": "",
+    "task.fpg_transform-gc7m.warehouseName": "{{task-type.transform.warehouseName}}"
+  },
+  "idToNameMap": {
+    "fpg_transform-gc7m": "fpg_Transform"
+  },
+  "connectionProperties": {
+    "{{id(connection, fpg_space.Snowflake_Target)}}": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}

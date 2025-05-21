@@ -1,0 +1,61 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "salaries-eztc",
+    "name": "salaries",
+    "projectId": "{{project.fpg_space$_$Bronze_project.projectId}}",
+    "taskId": "fpg_landing_storage-eztw"
+  },
+  "mappingFields": [
+    {
+      "columnId": "emp_no",
+      "expression": {
+        "expressionStatement": "${emp_no}",
+        "alias": [
+          {
+            "name": "emp_no",
+            "value": "emp_no"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "salary",
+      "expression": {
+        "expressionStatement": "${salary}",
+        "alias": [
+          {
+            "name": "salary",
+            "value": "salary"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "from_date",
+      "expression": {
+        "expressionStatement": "${from_date}",
+        "alias": [
+          {
+            "name": "from_date",
+            "value": "from_date"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "to_date",
+      "expression": {
+        "expressionStatement": "${to_date}",
+        "alias": [
+          {
+            "name": "to_date",
+            "value": "to_date"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "salaries_default_mapping-imqj",
+  "name": "salaries_default_mapping",
+  "description": ""
+}

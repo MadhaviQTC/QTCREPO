@@ -1,0 +1,61 @@
+{
+  "sourceDataEntityKey": {
+    "datasetId": "dept_manager-ezta",
+    "name": "dept_manager",
+    "projectId": "{{project.fpg_space$_$Bronze_project.projectId}}",
+    "taskId": "fpg_landing_storage-eztw"
+  },
+  "mappingFields": [
+    {
+      "columnId": "emp_no",
+      "expression": {
+        "expressionStatement": "${emp_no}",
+        "alias": [
+          {
+            "name": "emp_no",
+            "value": "emp_no"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "dept_no",
+      "expression": {
+        "expressionStatement": "${dept_no}",
+        "alias": [
+          {
+            "name": "dept_no",
+            "value": "dept_no"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "from_date",
+      "expression": {
+        "expressionStatement": "${from_date}",
+        "alias": [
+          {
+            "name": "from_date",
+            "value": "from_date"
+          }
+        ]
+      }
+    },
+    {
+      "columnId": "to_date",
+      "expression": {
+        "expressionStatement": "${to_date}",
+        "alias": [
+          {
+            "name": "to_date",
+            "value": "to_date"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "dept_manager_default_mapping-4qxl",
+  "name": "dept_manager_default_mapping",
+  "description": ""
+}

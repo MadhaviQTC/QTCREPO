@@ -1,0 +1,142 @@
+{
+  "id": "sql_trx_fpg-b6_o",
+  "name": "SQL_TRX_FPG",
+  "type": "CUSTOM",
+  "inputDatasets": [
+    {
+      "datasetId": "departments-ezty",
+      "name": "departments",
+      "projectId": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "taskId": "fpg_landing_storage-eztw"
+    },
+    {
+      "datasetId": "employees-eztb",
+      "name": "employees",
+      "projectId": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "taskId": "fpg_landing_storage-eztw"
+    },
+    {
+      "datasetId": "dept_emp-eztz",
+      "name": "dept_emp",
+      "projectId": "{{project.fpg_space$_$Bronze_project.projectId}}",
+      "taskId": "fpg_landing_storage-eztw"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "ON",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "tableDef": {
+    "name": "SQL_TRX_FPG",
+    "columns": [
+      {
+        "name": "emp_no",
+        "ordinal": 1,
+        "nullable": false,
+        "primaryKeyOrdinal": 1,
+        "datatype": {
+          "type": "NUMERIC",
+          "length": 0,
+          "precision": 38,
+          "scale": 0,
+          "originalType": "NUMBER",
+          "originalTypeFull": "NUMBER(38,0)"
+        },
+        "id": "emp_no",
+        "flags": "NONE"
+      },
+      {
+        "name": "dept_name",
+        "ordinal": 2,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 40,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(40)"
+        },
+        "id": "dept_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "gender",
+        "ordinal": 3,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 1,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(1)"
+        },
+        "id": "gender",
+        "flags": "NONE"
+      },
+      {
+        "name": "first_name",
+        "ordinal": 4,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 14,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(14)"
+        },
+        "id": "first_name",
+        "flags": "NONE"
+      },
+      {
+        "name": "dept_no",
+        "ordinal": 5,
+        "nullable": false,
+        "primaryKeyOrdinal": 0,
+        "datatype": {
+          "type": "STRING",
+          "length": 4,
+          "precision": 0,
+          "scale": 0,
+          "originalType": "VARCHAR",
+          "originalTypeFull": "VARCHAR(4)"
+        },
+        "id": "dept_no",
+        "flags": "NONE"
+      }
+    ],
+    "secureQri": "",
+    "fullLoadOnly": false
+  },
+  "customDatasetSettings": {
+    "customSql": {
+      "expressionStatement": "select e.\u0022emp_no\u0022,d.\u0022dept_name\u0022,e.\u0022gender\u0022,e.\u0022first_name\u0022,de.\u0022dept_no\u0022 from ${employees} e\njoin ${dept_emp} de\non e.\u0022emp_no\u0022=de.\u0022emp_no\u0022\njoin ${departments} d\non d.\u0022dept_no\u0022=de.\u0022emp_no\u0022",
+      "alias": [
+        {
+          "name": "employees",
+          "value": "{{project.fpg_space$_$Bronze_project.projectId}}$_$fpg_landing_storage-eztw$_$employees-eztb"
+        },
+        {
+          "name": "dept_emp",
+          "value": "{{project.fpg_space$_$Bronze_project.projectId}}$_$fpg_landing_storage-eztw$_$dept_emp-eztz"
+        },
+        {
+          "name": "departments",
+          "value": "{{project.fpg_space$_$Bronze_project.projectId}}$_$fpg_landing_storage-eztw$_$departments-ezty"
+        }
+      ]
+    },
+    "incremental": true
+  },
+  "virtualDataset": false,
+  "description": ""
+}
