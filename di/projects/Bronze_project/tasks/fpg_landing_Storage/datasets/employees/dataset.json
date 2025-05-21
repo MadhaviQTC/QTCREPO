@@ -1,0 +1,23 @@
+{
+  "id": "employees-eztb",
+  "name": "employees",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "employees",
+      "name": "employees",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "fpg_landing_landing-eztv"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

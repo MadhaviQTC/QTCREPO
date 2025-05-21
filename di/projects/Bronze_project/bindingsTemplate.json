@@ -1,0 +1,46 @@
+{
+  "variables": {
+    "cloudStagingConnection": "",
+    "platformConnection": "",
+    "projectName": "",
+    "project.current.prefixSchema": "",
+    "task-type.datamart.databaseName": "",
+    "task-type.datamart.databaseSelectionMethod": "",
+    "task-type.datamart.warehouseName": "",
+    "task-type.datamart.warehouseSelectionMethod": "",
+    "task-type.landing.databaseName": "",
+    "task-type.landing.databaseSelectionMethod": "",
+    "task-type.landing.warehouseName": "",
+    "task-type.landing.warehouseSelectionMethod": "",
+    "task-type.registered.databaseName": "",
+    "task-type.registered.databaseSelectionMethod": "",
+    "task-type.storage.databaseName": "",
+    "task-type.storage.databaseSelectionMethod": "",
+    "task-type.storage.warehouseName": "",
+    "task-type.storage.warehouseSelectionMethod": "",
+    "task-type.transform.databaseName": "",
+    "task-type.transform.databaseSelectionMethod": "",
+    "task-type.transform.warehouseName": "",
+    "task-type.transform.warehouseSelectionMethod": "",
+    "task.fpg_landing_landing-eztv.databaseName": "{{task-type.landing.databaseName}}",
+    "task.fpg_landing_landing-eztv.sourceConnection": "",
+    "task.fpg_landing_landing-eztv.taskSchema": "",
+    "task.fpg_landing_landing-eztv:null$_$employees.schema": "",
+    "task.fpg_landing_storage-eztw.databaseName": "{{task-type.storage.databaseName}}",
+    "task.fpg_landing_storage-eztw.internalSchema": "",
+    "task.fpg_landing_storage-eztw.taskSchema": "",
+    "task.fpg_landing_storage-eztw.warehouseName": "{{task-type.storage.warehouseName}}"
+  },
+  "idToNameMap": {
+    "fpg_landing_landing-eztv": "fpg_landing_Landing",
+    "fpg_landing_storage-eztw": "fpg_landing_Storage"
+  },
+  "connectionProperties": {
+    "{{id(connection, fpg_space.MySQL)}}": {
+      "type": "repsrc_mysql"
+    },
+    "{{id(connection, fpg_space.Snowflake_Target)}}": {
+      "type": "reptgt_qdisnowflake"
+    }
+  }
+}

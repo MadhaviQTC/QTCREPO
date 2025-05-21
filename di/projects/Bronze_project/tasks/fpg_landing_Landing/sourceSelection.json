@@ -1,0 +1,43 @@
+{
+  "sourceConnection": "{{task.fpg_landing_landing-eztv.sourceConnection}}",
+  "includePatterns": [],
+  "excludePatterns": [],
+  "explicitlySelected": [
+    {
+      "name": "departments",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$employees_departments"
+    },
+    {
+      "name": "dept_emp",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$employees_dept_emp"
+    },
+    {
+      "name": "dept_manager",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$employees_dept_manager"
+    },
+    {
+      "name": "employees",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$employees_employees"
+    },
+    {
+      "name": "salaries",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$employees_salaries"
+    },
+    {
+      "name": "titles",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$employees_titles"
+    }
+  ]
+}
