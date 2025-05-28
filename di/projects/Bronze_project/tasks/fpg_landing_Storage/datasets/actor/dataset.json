@@ -1,0 +1,23 @@
+{
+  "id": "actor-jpo3",
+  "name": "actor",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "actor",
+      "name": "actor",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "fpg_landing_landing-eztv"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}

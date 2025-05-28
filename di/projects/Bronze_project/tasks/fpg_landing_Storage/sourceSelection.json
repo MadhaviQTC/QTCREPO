@@ -9,5 +9,20 @@
     }
   ],
   "excludePatterns": [],
-  "explicitlySelected": []
+  "explicitlySelected": [
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "fpg_landing_landing-eztv",
+      "name": "actor",
+      "type": "NONE",
+      "sourceTableId": "actor"
+    },
+    {
+      "sourceProject": "{{ref(project.current.projectId)}}",
+      "sourceTask": "fpg_landing_landing-eztv",
+      "name": "address",
+      "type": "NONE",
+      "sourceTableId": "address"
+    }
+  ]
 }

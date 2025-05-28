@@ -1,0 +1,23 @@
+{
+  "id": "address-jpo4",
+  "name": "address",
+  "type": "STORAGE",
+  "inputDatasets": [
+    {
+      "datasetId": "address",
+      "name": "address",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "fpg_landing_landing-eztv"
+    }
+  ],
+  "datasetAttributes": {
+    "materialized": "INHERIT",
+    "hasHistory": "INHERIT",
+    "hasLiveViews": "INHERIT",
+    "hasChanges": "INHERIT",
+    "hasStandardViewsWithHeaders": "INHERIT",
+    "watermarkIncrementalSettings": "INHERIT"
+  },
+  "virtualDataset": false,
+  "description": ""
+}
