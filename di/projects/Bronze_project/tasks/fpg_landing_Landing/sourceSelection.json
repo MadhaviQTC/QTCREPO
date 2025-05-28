@@ -38,6 +38,18 @@
       "schema": "{{task.fpg_landing_landing-eztv:null$_$employees.schema}}",
       "type": "TABLE",
       "sourceTableId": "$replicate$employees_titles"
+    },
+    {
+      "name": "actor",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_actor"
+    },
+    {
+      "name": "address",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$sakila.schema}}",
+      "type": "TABLE",
+      "sourceTableId": "$replicate$sakila_address"
     }
   ]
 }

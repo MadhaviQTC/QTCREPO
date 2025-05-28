@@ -26,6 +26,7 @@
     "task.fpg_landing_landing-eztv.sourceConnection": "",
     "task.fpg_landing_landing-eztv.taskSchema": "",
     "task.fpg_landing_landing-eztv:null$_$employees.schema": "",
+    "task.fpg_landing_landing-eztv:null$_$sakila.schema": "",
     "task.fpg_landing_storage-eztw.databaseName": "{{task-type.storage.databaseName}}",
     "task.fpg_landing_storage-eztw.internalSchema": "",
     "task.fpg_landing_storage-eztw.taskSchema": "",
