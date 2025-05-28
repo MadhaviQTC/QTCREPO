@@ -1,0 +1,16 @@
+{
+  "id": "address",
+  "name": "address",
+  "type": "LANDING",
+  "inputDatasets": [
+    {
+      "datasetId": "$replicate$sakila_address",
+      "name": "address",
+      "projectId": "{{ref(project.current.projectId)}}",
+      "taskId": "fpg_landing_landing-eztv",
+      "schema": "{{task.fpg_landing_landing-eztv:null$_$sakila.schema}}"
+    }
+  ],
+  "virtualDataset": false,
+  "description": ""
+}
